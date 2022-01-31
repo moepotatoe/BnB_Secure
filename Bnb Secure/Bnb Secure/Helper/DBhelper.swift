@@ -90,7 +90,7 @@ class DBhelper {
         
     }
                                     
-        func update(userid : String, password : Int) {
+        func update (userid : String, password : Int) {
                     
             let query = "UPDATE LogInTable SET userid = '\(userid)', password = '\(password)';"
             var statement : OpaquePointer? = nil
