@@ -1,4 +1,8 @@
-//
+// Need to do more testing on all functions
+
+
+
+
 //  DBhelper.swift
 //  Bnb Secure
 //
