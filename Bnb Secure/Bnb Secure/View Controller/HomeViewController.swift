@@ -9,15 +9,17 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
-    @IBOutlet weak var signOutButton: UIButton!
+    @IBOutlet weak var hotelTable: UITableView!
+    @IBOutlet weak var activityTable: UITableView!
+    @IBOutlet weak var homeButton: UIButton!
+    @IBOutlet weak var plusButton: UIButton!
+    @IBOutlet weak var gearButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
-        setUpElements()
+        //refresh.hidesWhenStopped = true
     }
-    
 
     /*
     // MARK: - Navigation
@@ -28,8 +30,16 @@ class HomeViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    func setUpElements() {
-        Utilities.styleFilledButton(signOutButton)
-    }
 
+    
+    @IBAction func homeButtonTapped(_ sender: UIButton) {
+        self.showRefresh()
+        Timer.scheduledTimer(withTimeInterval: 2.0, repeats: false) { (t) in
+            self.stopRefresh()
+        }
+    }
+    //refresh.startAnimating()
+
+
+    
 }

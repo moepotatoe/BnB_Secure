@@ -13,11 +13,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Bnb_Secure" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="o14-AH-9be">
-                                <rect key="frame" x="40" y="648" width="334" height="120"/>
+                                <rect key="frame" x="40" y="702" width="334" height="120"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Et-sf-4Qv">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="50"/>
@@ -81,11 +81,11 @@
             <objects>
                 <viewController id="6z1-GI-zdE" customClass="SignUpViewController" customModule="Bnb_Secure" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="15H-dC-3dG">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="r10-2Q-G56">
-                                <rect key="frame" x="40" y="40" width="334" height="470"/>
+                                <rect key="frame" x="40" y="84" width="334" height="470"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3Mp-MN-geA">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="50"/>
@@ -174,11 +174,11 @@
             <objects>
                 <viewController id="JB8-Kt-8ig" customClass="LoginViewController" customModule="Bnb_Secure" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fsZ-ph-ZM3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="QdM-mp-b7E">
-                                <rect key="frame" x="40" y="40" width="334" height="330"/>
+                                <rect key="frame" x="40" y="84" width="334" height="330"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FiN-0o-9mf">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="50"/>
@@ -253,48 +253,124 @@
             <objects>
                 <viewController id="lZb-Bg-9Rw" customClass="HomeViewController" customModule="Bnb_Secure" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wZP-6w-FtO">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="No Activity Yet" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S5Z-hy-1Fn">
-                                <rect key="frame" x="140" y="405" width="135" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ojt-iX-9h4">
-                                <rect key="frame" x="40" y="718" width="334" height="50"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ehx-1L-IJ8">
+                                <rect key="frame" x="0.0" y="812" width="414" height="50"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IoM-G0-dlD">
-                                        <rect key="frame" x="0.0" y="0.0" width="334" height="50"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7T1-bz-Kjw">
+                                        <rect key="frame" x="0.0" y="0.0" width="138" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="KNa-CI-RBm"/>
+                                            <constraint firstAttribute="height" constant="50" id="dZe-1n-3kK"/>
                                         </constraints>
+                                        <color key="tintColor" systemColor="labelColor"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Sign Out"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="homekit" catalog="system"/>
                                         <connections>
-                                            <segue destination="BYZ-38-t0r" kind="show" id="ult-ze-qvH"/>
+                                            <action selector="homeButtonTapped:" destination="lZb-Bg-9Rw" eventType="touchUpInside" id="Nh4-9p-iyx"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V1k-Bo-DWd">
+                                        <rect key="frame" x="138" y="0.0" width="138" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <color key="tintColor" systemColor="labelColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="plus.app" catalog="system"/>
+                                        <connections>
+                                            <segue destination="4kO-Md-I6f" kind="show" id="fnZ-fC-iYj"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Zy-Lp-5fA">
+                                        <rect key="frame" x="276" y="0.0" width="138" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <color key="tintColor" systemColor="labelColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="gearshape" catalog="system"/>
+                                        <connections>
+                                            <segue destination="GXf-0f-81w" kind="show" id="Ws3-Qx-zgB"/>
                                         </connections>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="3Zy-Lp-5fA" firstAttribute="width" secondItem="7T1-bz-Kjw" secondAttribute="width" id="a5M-WZ-XJf"/>
+                                    <constraint firstItem="3Zy-Lp-5fA" firstAttribute="height" secondItem="7T1-bz-Kjw" secondAttribute="height" id="eqg-ms-glN"/>
+                                    <constraint firstItem="V1k-Bo-DWd" firstAttribute="height" secondItem="7T1-bz-Kjw" secondAttribute="height" id="r1c-Cf-F3B"/>
+                                    <constraint firstItem="V1k-Bo-DWd" firstAttribute="width" secondItem="7T1-bz-Kjw" secondAttribute="width" id="wja-ds-gqn"/>
+                                </constraints>
                             </stackView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="1F5-O7-qCL">
+                                <rect key="frame" x="40" y="84" width="334" height="165"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Hrh-Ls-AcK">
+                                <rect key="frame" x="40" y="328" width="334" height="184"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="Nqy-68-Ceg"/>
+                                </constraints>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="dQZ-06-nKL"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="dQZ-06-nKL" firstAttribute="bottom" secondItem="ojt-iX-9h4" secondAttribute="bottom" constant="40" id="Bo9-XF-Hfl"/>
-                            <constraint firstItem="ojt-iX-9h4" firstAttribute="leading" secondItem="dQZ-06-nKL" secondAttribute="leading" constant="40" id="G0L-bD-pN0"/>
-                            <constraint firstItem="dQZ-06-nKL" firstAttribute="trailing" secondItem="ojt-iX-9h4" secondAttribute="trailing" constant="40" id="oHe-yL-78T"/>
+                            <constraint firstItem="Hrh-Ls-AcK" firstAttribute="centerY" secondItem="wZP-6w-FtO" secondAttribute="centerY" id="AMD-3K-Gwb"/>
+                            <constraint firstItem="dQZ-06-nKL" firstAttribute="trailing" secondItem="Hrh-Ls-AcK" secondAttribute="trailing" constant="40" id="K0D-ZL-mZi"/>
+                            <constraint firstItem="ehx-1L-IJ8" firstAttribute="leading" secondItem="dQZ-06-nKL" secondAttribute="leading" id="P2s-eY-O9Y"/>
+                            <constraint firstItem="Hrh-Ls-AcK" firstAttribute="leading" secondItem="dQZ-06-nKL" secondAttribute="leading" constant="40" id="Pbi-eW-idq"/>
+                            <constraint firstItem="1F5-O7-qCL" firstAttribute="leading" secondItem="dQZ-06-nKL" secondAttribute="leading" constant="40" id="Tif-lm-vz8"/>
+                            <constraint firstItem="dQZ-06-nKL" firstAttribute="trailing" secondItem="ehx-1L-IJ8" secondAttribute="trailing" id="fER-4v-htR"/>
+                            <constraint firstItem="Hrh-Ls-AcK" firstAttribute="top" secondItem="1F5-O7-qCL" secondAttribute="bottom" constant="40" id="ihU-1X-SG6"/>
+                            <constraint firstItem="dQZ-06-nKL" firstAttribute="trailing" secondItem="1F5-O7-qCL" secondAttribute="trailing" constant="40" id="kDZ-kB-DdL"/>
+                            <constraint firstItem="ehx-1L-IJ8" firstAttribute="bottom" secondItem="dQZ-06-nKL" secondAttribute="bottom" id="mfg-sa-FIW"/>
+                            <constraint firstItem="1F5-O7-qCL" firstAttribute="top" secondItem="dQZ-06-nKL" secondAttribute="top" constant="40" id="uoK-BB-aPT"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="bde-aS-pc8"/>
                     <connections>
-                        <outlet property="signOutButton" destination="IoM-G0-dlD" id="DOM-4q-H8v"/>
+                        <outlet property="activityTable" destination="Hrh-Ls-AcK" id="SlP-aR-HeV"/>
+                        <outlet property="gearButton" destination="3Zy-Lp-5fA" id="0sy-IW-rE1"/>
+                        <outlet property="homeButton" destination="7T1-bz-Kjw" id="Emt-pJ-cP5"/>
+                        <outlet property="hotelTable" destination="1F5-O7-qCL" id="JUD-bT-vvF"/>
+                        <outlet property="plusButton" destination="V1k-Bo-DWd" id="SEz-7x-JaV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uFW-Kc-yci" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2489.8550724637685" y="65.625"/>
+        </scene>
+        <!--Add Hotel View Controller-->
+        <scene sceneID="TWZ-R5-iie">
+            <objects>
+                <viewController id="4kO-Md-I6f" customClass="addHotelViewController" customModule="Bnb_Secure" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TJ1-RU-Pmg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="4Ds-mO-34G"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="zGx-zB-khD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d7T-Xt-yZu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3252" y="-297"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="J2W-Zz-FU8">
+            <objects>
+                <viewController id="GXf-0f-81w" customClass="SettingsViewController" customModule="Bnb_Secure" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="U0D-ZQ-ro7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="ao4-Ri-QBp"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="kLh-ch-5GB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rqt-Wu-qdx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3252" y="461"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="fGa-z8-qtg">
@@ -315,11 +391,16 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="566-s0-EBz"/>
         <segue reference="Ob7-Ze-qMe"/>
-        <segue reference="ult-ze-qvH"/>
+        <segue reference="olb-Wu-iTd"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="gearshape" catalog="system" width="128" height="121"/>
+        <image name="homekit" catalog="system" width="128" height="106"/>
+        <image name="plus.app" catalog="system" width="128" height="114"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

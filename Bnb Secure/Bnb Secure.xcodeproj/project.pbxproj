@@ -17,7 +17,8 @@
 		85111675279F849800A2AC87 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85111674279F849800A2AC87 /* LoginViewController.swift */; };
 		85111677279F84AA00A2AC87 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85111676279F84AA00A2AC87 /* SignUpViewController.swift */; };
 		85115D5C279F9A1400A38EE0 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85115D5B279F9A1400A38EE0 /* Utilities.swift */; };
-		855CCDA5279FA46E007CCC88 /* travel.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 855CCDA4279FA46E007CCC88 /* travel.mp4 */; };
+		85F0D51E27AC6CC900065434 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F0D51D27AC6CC900065434 /* SettingsViewController.swift */; };
+		85F0D52027AC6CD100065434 /* addHotelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F0D51F27AC6CD100065434 /* addHotelViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +34,8 @@
 		85111674279F849800A2AC87 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		85111676279F84AA00A2AC87 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		85115D5B279F9A1400A38EE0 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
-		855CCDA4279FA46E007CCC88 /* travel.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = travel.mp4; sourceTree = "<group>"; };
+		85F0D51D27AC6CC900065434 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		85F0D51F27AC6CD100065434 /* addHotelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addHotelViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +71,6 @@
 				8511165E279F72D600A2AC87 /* AppDelegate.swift */,
 				85111660279F72D600A2AC87 /* SceneDelegate.swift */,
 				85115D5D279F9A1B00A38EE0 /* Helper */,
-				855CCDA3279FA461007CCC88 /* Media */,
 				85111678279F84B200A2AC87 /* View Controller */,
 				85111664279F72D600A2AC87 /* Main.storyboard */,
 				85111667279F72D700A2AC87 /* Assets.xcassets */,
@@ -86,6 +87,8 @@
 				85111676279F84AA00A2AC87 /* SignUpViewController.swift */,
 				85111674279F849800A2AC87 /* LoginViewController.swift */,
 				85111672279F848B00A2AC87 /* HomeViewController.swift */,
+				85F0D51D27AC6CC900065434 /* SettingsViewController.swift */,
+				85F0D51F27AC6CD100065434 /* addHotelViewController.swift */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -96,14 +99,6 @@
 				85115D5B279F9A1400A38EE0 /* Utilities.swift */,
 			);
 			path = Helper;
-			sourceTree = "<group>";
-		};
-		855CCDA3279FA461007CCC88 /* Media */ = {
-			isa = PBXGroup;
-			children = (
-				855CCDA4279FA46E007CCC88 /* travel.mp4 */,
-			);
-			path = Media;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,7 +162,6 @@
 				8511166B279F72D700A2AC87 /* LaunchScreen.storyboard in Resources */,
 				85111668279F72D700A2AC87 /* Assets.xcassets in Resources */,
 				85111666279F72D600A2AC87 /* Main.storyboard in Resources */,
-				855CCDA5279FA46E007CCC88 /* travel.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,9 +176,11 @@
 				85111663279F72D600A2AC87 /* ViewController.swift in Sources */,
 				85115D5C279F9A1400A38EE0 /* Utilities.swift in Sources */,
 				8511165F279F72D600A2AC87 /* AppDelegate.swift in Sources */,
+				85F0D52027AC6CD100065434 /* addHotelViewController.swift in Sources */,
 				85111661279F72D600A2AC87 /* SceneDelegate.swift in Sources */,
 				85111675279F849800A2AC87 /* LoginViewController.swift in Sources */,
 				85111673279F848B00A2AC87 /* HomeViewController.swift in Sources */,
+				85F0D51E27AC6CC900065434 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
