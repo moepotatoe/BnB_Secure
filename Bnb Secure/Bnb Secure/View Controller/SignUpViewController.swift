@@ -14,6 +14,7 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var lastNameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var phoneNumberTextField: UITextField!
     @IBOutlet weak var signUpButton: UIButton!
     @IBOutlet weak var errorLabel: UILabel!
     @IBOutlet weak var backButton: UIButton!
@@ -42,6 +43,7 @@ class SignUpViewController: UIViewController {
         Utilities.styleTextField(lastNameTextField)
         Utilities.styleTextField(emailTextField)
         Utilities.styleTextField(passwordTextField)
+        Utilities.styleTextField(phoneNumberTextField)
         Utilities.styleFilledButton(signUpButton)
         Utilities.styleHollowButton(backButton)
     }
