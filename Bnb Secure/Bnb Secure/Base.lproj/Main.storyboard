@@ -43,27 +43,33 @@
                                     <constraint firstItem="Yi3-ts-C0w" firstAttribute="height" secondItem="7Et-sf-4Qv" secondAttribute="height" id="R8u-bN-oop"/>
                                 </constraints>
                             </stackView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="BnB " textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3pM-yY-C1P">
-                                <rect key="frame" x="73" y="362" width="121" height="96"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="BnB " textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3pM-yY-C1P">
+                                <rect key="frame" x="75" y="360" width="119" height="98"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="28"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Secure" textAlignment="natural" minimumFontSize="40" translatesAutoresizingMaskIntoConstraints="NO" id="tIb-iq-e50">
-                                <rect key="frame" x="169" y="381" width="164" height="59"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Secure" textAlignment="natural" minimumFontSize="40" translatesAutoresizingMaskIntoConstraints="NO" id="tIb-iq-e50">
+                                <rect key="frame" x="170" y="380" width="164" height="58"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="50"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemGray2Color"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="o14-AH-9be" secondAttribute="trailing" constant="40" id="1lX-7m-Dyc"/>
                             <constraint firstItem="o14-AH-9be" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="9zC-Xb-SlU"/>
+                            <constraint firstItem="3pM-yY-C1P" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="75" id="KKw-U1-fr3"/>
+                            <constraint firstItem="3pM-yY-C1P" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="360" id="MkP-5C-vK0"/>
+                            <constraint firstItem="o14-AH-9be" firstAttribute="top" secondItem="3pM-yY-C1P" secondAttribute="bottom" constant="190" id="Qs5-Xx-gev"/>
+                            <constraint firstItem="tIb-iq-e50" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="380" id="SN8-3w-x3u"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3pM-yY-C1P" secondAttribute="trailing" constant="220" id="dE3-M8-TKs"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="o14-AH-9be" secondAttribute="bottom" constant="40" id="hXN-QJ-24l"/>
+                            <constraint firstItem="tIb-iq-e50" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="170" id="rx8-KU-rRD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tIb-iq-e50" secondAttribute="trailing" constant="80" id="xF8-gH-f6c"/>
+                            <constraint firstItem="o14-AH-9be" firstAttribute="top" secondItem="tIb-iq-e50" secondAttribute="bottom" constant="210" id="yEN-gH-c27"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="35B-Ev-xlk"/>
@@ -400,6 +406,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="566-s0-EBz"/>
         <segue reference="Ob7-Ze-qMe"/>
         <segue reference="okP-xi-0Zt"/>
     </inferredMetricsTieBreakers>
@@ -412,6 +419,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
