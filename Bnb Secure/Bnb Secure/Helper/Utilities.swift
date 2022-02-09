@@ -46,7 +46,7 @@ class Utilities {
         
     }
     
-    static func styleFilledButton(_ button:UIButton) {
+    static func styleGreenButton(_ button:UIButton) {
         // Filled rounded corner style
         button.backgroundColor = UIColor.init(red: 48/255, green: 173/255, blue: 99/255, alpha: 1)
         button.layer.cornerRadius = 25.0
@@ -54,7 +54,7 @@ class Utilities {
     }
     
     // white button with light green border
-    static func styleHollowButton(_ button:UIButton) {
+    static func styleWhiteButton(_ button:UIButton) {
         // Hollow rounded corner style
         button.layer.borderWidth = 2
         button.layer.borderColor = CGColor.init(red: 48/255, green: 173/255, blue: 99/255, alpha: 1)

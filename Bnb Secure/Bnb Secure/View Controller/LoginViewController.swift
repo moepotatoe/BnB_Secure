@@ -38,8 +38,8 @@ class LoginViewController: UIViewController {
         errorLabel.alpha = 0
         Utilities.styleTextField(emailTextField)
         Utilities.styleTextField(passwordTextField)
-        Utilities.styleFilledButton(loginButton)
-        Utilities.styleHollowButton(backButton)
+        Utilities.styleGreenButton(loginButton)
+        Utilities.styleWhiteButton(backButton)
     }
     
     @IBAction func loginTapped(_ sender: Any) {

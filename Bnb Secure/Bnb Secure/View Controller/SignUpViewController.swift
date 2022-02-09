@@ -44,8 +44,8 @@ class SignUpViewController: UIViewController {
         Utilities.styleTextField(emailTextField)
         Utilities.styleTextField(passwordTextField)
         Utilities.styleTextField(phoneNumberTextField)
-        Utilities.styleFilledButton(signUpButton)
-        Utilities.styleHollowButton(backButton)
+        Utilities.styleGreenButton(signUpButton)
+        Utilities.styleWhiteButton(backButton)
     }
     
     
