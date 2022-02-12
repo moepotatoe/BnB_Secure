@@ -9,6 +9,21 @@ import UIKit
 
 class addHotelViewController: UIViewController {
 
+    
+    @IBOutlet weak var homeButton: UIButton!
+    @IBOutlet weak var plusButton: UIButton!
+    @IBOutlet weak var gearButton: UIButton!
+    
+    @IBOutlet weak var hotelName: UITextField!
+    @IBOutlet weak var address: UITextField!
+    @IBOutlet weak var city: UITextField!
+    @IBOutlet weak var state: UITextField!
+    @IBOutlet weak var zipcode: UITextField!
+    @IBOutlet weak var country: UITextField!
+    @IBOutlet weak var roomNum: UITextField!
+    @IBOutlet weak var numOfGuests: UITextField!
+    @IBOutlet weak var roomType: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -25,5 +40,11 @@ class addHotelViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    @IBAction func plusButtonTouched(_ sender: UIButton) {
+        self.showRefresh()
+        Timer.scheduledTimer(withTimeInterval: 2.0, repeats: false) { (t) in
+            self.stopRefresh()
+        }
+    }
+    
 }

@@ -362,10 +362,158 @@
                     <view key="view" contentMode="scaleToFill" id="TJ1-RU-Pmg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TNF-yx-mQR">
+                                <rect key="frame" x="0.0" y="758" width="414" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E1F-4A-tNP">
+                                        <rect key="frame" x="0.0" y="0.0" width="138" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Qth-oE-Cht"/>
+                                        </constraints>
+                                        <color key="tintColor" systemColor="labelColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="homekit" catalog="system"/>
+                                        <connections>
+                                            <action selector="homeButtonTapped:" destination="lZb-Bg-9Rw" eventType="touchUpInside" id="ujd-An-fhN"/>
+                                            <segue destination="lZb-Bg-9Rw" kind="show" id="AUg-h8-icK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mCG-r9-Lsa">
+                                        <rect key="frame" x="138" y="0.0" width="138" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <color key="tintColor" systemColor="labelColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="plus.app" catalog="system"/>
+                                        <connections>
+                                            <action selector="plusButtonTouched:" destination="4kO-Md-I6f" eventType="touchUpInside" id="LN8-57-kDW"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ve2-LE-1Pu">
+                                        <rect key="frame" x="276" y="0.0" width="138" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <color key="tintColor" systemColor="labelColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="gearshape" catalog="system"/>
+                                        <connections>
+                                            <segue destination="GXf-0f-81w" kind="show" id="yRW-lf-D9t"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Ve2-LE-1Pu" firstAttribute="width" secondItem="E1F-4A-tNP" secondAttribute="width" id="39e-53-Ulz"/>
+                                    <constraint firstItem="Ve2-LE-1Pu" firstAttribute="height" secondItem="E1F-4A-tNP" secondAttribute="height" id="YTg-rU-SZR"/>
+                                    <constraint firstItem="mCG-r9-Lsa" firstAttribute="width" secondItem="E1F-4A-tNP" secondAttribute="width" id="nx1-Dj-nRl"/>
+                                    <constraint firstItem="mCG-r9-Lsa" firstAttribute="height" secondItem="E1F-4A-tNP" secondAttribute="height" id="r9c-sI-Ocd"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="eK7-XY-bDV">
+                                <rect key="frame" x="40" y="424.5" width="334" height="182.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Room Information" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZTH-Lo-8vf">
+                                        <rect key="frame" x="0.0" y="0.0" width="334" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Room Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ToK-xO-iFD">
+                                        <rect key="frame" x="0.0" y="40.5" width="334" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Number of Guests" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L3G-8h-CG9">
+                                        <rect key="frame" x="0.0" y="94.5" width="334" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Room Type" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HOM-1H-9lL">
+                                        <rect key="frame" x="0.0" y="148.5" width="334" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="VCw-oc-738">
+                                <rect key="frame" x="40" y="40" width="334" height="344.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hotel Information" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fPI-c3-G3r">
+                                        <rect key="frame" x="0.0" y="0.0" width="334" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Hotel Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Wf-MK-XJ2">
+                                        <rect key="frame" x="0.0" y="40.5" width="334" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="481-Pk-q6i">
+                                        <rect key="frame" x="0.0" y="94.5" width="334" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="City" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MqQ-Zc-N1l">
+                                        <rect key="frame" x="0.0" y="148.5" width="334" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="State" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iFh-pJ-6yo">
+                                        <rect key="frame" x="0.0" y="202.5" width="334" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Zip Code" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lsT-qF-qhl">
+                                        <rect key="frame" x="0.0" y="256.5" width="334" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Country" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TSz-m7-IkJ">
+                                        <rect key="frame" x="0.0" y="310.5" width="334" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MoW-pd-wvC">
+                                <rect key="frame" x="40" y="700" width="334" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Add"/>
+                                <connections>
+                                    <action selector="loginTapped:" destination="JB8-Kt-8ig" eventType="touchUpInside" id="gJ9-W5-ZDK"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="4Ds-mO-34G"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4Ds-mO-34G" firstAttribute="trailing" secondItem="eK7-XY-bDV" secondAttribute="trailing" constant="40" id="2n7-wz-pqf"/>
+                            <constraint firstItem="eK7-XY-bDV" firstAttribute="top" secondItem="VCw-oc-738" secondAttribute="bottom" constant="40" id="6ft-h3-Dfb"/>
+                            <constraint firstItem="4Ds-mO-34G" firstAttribute="trailing" secondItem="TNF-yx-mQR" secondAttribute="trailing" id="EVB-io-nOH"/>
+                            <constraint firstItem="VCw-oc-738" firstAttribute="top" secondItem="4Ds-mO-34G" secondAttribute="top" constant="40" id="Eao-lq-gRo"/>
+                            <constraint firstItem="TNF-yx-mQR" firstAttribute="bottom" secondItem="4Ds-mO-34G" secondAttribute="bottom" id="aLz-Ng-8GC"/>
+                            <constraint firstItem="VCw-oc-738" firstAttribute="leading" secondItem="4Ds-mO-34G" secondAttribute="leading" constant="40" id="amE-Cv-3BD"/>
+                            <constraint firstItem="TNF-yx-mQR" firstAttribute="leading" secondItem="4Ds-mO-34G" secondAttribute="leading" id="kGU-YA-GEI"/>
+                            <constraint firstItem="4Ds-mO-34G" firstAttribute="trailing" secondItem="VCw-oc-738" secondAttribute="trailing" constant="40" id="njs-UZ-Evy"/>
+                            <constraint firstItem="eK7-XY-bDV" firstAttribute="leading" secondItem="4Ds-mO-34G" secondAttribute="leading" constant="40" id="v5z-D1-7WX"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="zGx-zB-khD"/>
+                    <connections>
+                        <outlet property="address" destination="481-Pk-q6i" id="UrQ-nL-Omm"/>
+                        <outlet property="city" destination="MqQ-Zc-N1l" id="y2G-NG-3YW"/>
+                        <outlet property="country" destination="TSz-m7-IkJ" id="c40-vh-zwC"/>
+                        <outlet property="gearButton" destination="Ve2-LE-1Pu" id="Upb-cr-849"/>
+                        <outlet property="homeButton" destination="E1F-4A-tNP" id="QDD-IP-RSr"/>
+                        <outlet property="hotelName" destination="4Wf-MK-XJ2" id="itP-LD-yTu"/>
+                        <outlet property="numOfGuests" destination="L3G-8h-CG9" id="6nr-jj-mH0"/>
+                        <outlet property="plusButton" destination="mCG-r9-Lsa" id="uaN-GI-gFd"/>
+                        <outlet property="roomNum" destination="ToK-xO-iFD" id="vni-ru-BVB"/>
+                        <outlet property="roomType" destination="HOM-1H-9lL" id="len-z3-XpI"/>
+                        <outlet property="state" destination="iFh-pJ-6yo" id="Y02-ff-ASz"/>
+                        <outlet property="zipcode" destination="lsT-qF-qhl" id="vno-XN-4tC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d7T-Xt-yZu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -570,8 +718,9 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="yRW-lf-D9t"/>
         <segue reference="Ixg-Xe-xwD"/>
-        <segue reference="01g-fn-axv"/>
+        <segue reference="AUg-h8-icK"/>
         <segue reference="a9Q-Ox-Ydg"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" systemColor="systemGreenColor"/>
