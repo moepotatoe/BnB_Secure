@@ -12,6 +12,12 @@ class notificationsViewController: UIViewController {
     @IBOutlet weak var emailSwitch: UISwitch!
     @IBOutlet weak var textMessageSwitch: UISwitch!
     
+    @IBOutlet weak var homeButton: UIButton!
+    @IBOutlet weak var plusButton: UIButton!
+    @IBOutlet weak var gearButton: UIButton!
+    @IBOutlet weak var notificationsButton: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

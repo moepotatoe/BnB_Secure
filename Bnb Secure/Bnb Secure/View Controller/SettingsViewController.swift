@@ -19,6 +19,12 @@ class SettingsViewController: UIViewController {
     @IBOutlet weak var licenseTextField: UITextField!
     @IBOutlet weak var updateChangesButton: UIButton!
     @IBOutlet weak var logOutButton: UIButton!
+    @IBOutlet weak var homeButton: UIButton!
+    @IBOutlet weak var addButton: UIButton!
+    @IBOutlet weak var gearButton: UIButton!
+    @IBOutlet weak var notificationsButton: UIButton!
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

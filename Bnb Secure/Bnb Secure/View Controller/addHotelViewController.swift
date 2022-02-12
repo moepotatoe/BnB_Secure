@@ -14,6 +14,7 @@ class addHotelViewController: UIViewController {
     @IBOutlet weak var plusButton: UIButton!
     @IBOutlet weak var gearButton: UIButton!
     
+    
     @IBOutlet weak var hotelName: UITextField!
     @IBOutlet weak var address: UITextField!
     @IBOutlet weak var city: UITextField!
@@ -24,6 +25,7 @@ class addHotelViewController: UIViewController {
     @IBOutlet weak var numOfGuests: UITextField!
     @IBOutlet weak var roomType: UITextField!
     @IBOutlet weak var addButton: UIButton!
+    @IBOutlet weak var notificationsButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
