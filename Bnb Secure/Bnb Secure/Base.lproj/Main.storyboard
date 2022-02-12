@@ -501,6 +501,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="zGx-zB-khD"/>
                     <connections>
+                        <outlet property="addButton" destination="MoW-pd-wvC" id="Okn-NZ-Kea"/>
                         <outlet property="address" destination="481-Pk-q6i" id="UrQ-nL-Omm"/>
                         <outlet property="city" destination="MqQ-Zc-N1l" id="y2G-NG-3YW"/>
                         <outlet property="country" destination="TSz-m7-IkJ" id="c40-vh-zwC"/>

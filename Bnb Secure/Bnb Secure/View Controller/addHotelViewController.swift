@@ -23,10 +23,11 @@ class addHotelViewController: UIViewController {
     @IBOutlet weak var roomNum: UITextField!
     @IBOutlet weak var numOfGuests: UITextField!
     @IBOutlet weak var roomType: UITextField!
+    @IBOutlet weak var addButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setUpElements()
         // Do any additional setup after loading the view.
     }
     
@@ -45,6 +46,10 @@ class addHotelViewController: UIViewController {
         Timer.scheduledTimer(withTimeInterval: 2.0, repeats: false) { (t) in
             self.stopRefresh()
         }
+    }
+    
+    func setUpElements()  {
+        Utilities.styleGreenButton(addButton)
     }
     
 }
