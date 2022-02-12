@@ -17,6 +17,7 @@
 		85111675279F849800A2AC87 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85111674279F849800A2AC87 /* LoginViewController.swift */; };
 		85111677279F84AA00A2AC87 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85111676279F84AA00A2AC87 /* SignUpViewController.swift */; };
 		85115D5C279F9A1400A38EE0 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85115D5B279F9A1400A38EE0 /* Utilities.swift */; };
+		85749B5C27B86BCE001BCC57 /* notificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85749B5B27B86BCE001BCC57 /* notificationsViewController.swift */; };
 		85F0D51E27AC6CC900065434 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F0D51D27AC6CC900065434 /* SettingsViewController.swift */; };
 		85F0D52027AC6CD100065434 /* addHotelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F0D51F27AC6CD100065434 /* addHotelViewController.swift */; };
 /* End PBXBuildFile section */
@@ -34,6 +35,7 @@
 		85111674279F849800A2AC87 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		85111676279F84AA00A2AC87 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		85115D5B279F9A1400A38EE0 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		85749B5B27B86BCE001BCC57 /* notificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = notificationsViewController.swift; sourceTree = "<group>"; };
 		85F0D51D27AC6CC900065434 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		85F0D51F27AC6CD100065434 /* addHotelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addHotelViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -89,6 +91,7 @@
 				85111672279F848B00A2AC87 /* HomeViewController.swift */,
 				85F0D51D27AC6CC900065434 /* SettingsViewController.swift */,
 				85F0D51F27AC6CD100065434 /* addHotelViewController.swift */,
+				85749B5B27B86BCE001BCC57 /* notificationsViewController.swift */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				85111677279F84AA00A2AC87 /* SignUpViewController.swift in Sources */,
+				85749B5C27B86BCE001BCC57 /* notificationsViewController.swift in Sources */,
 				85111663279F72D600A2AC87 /* ViewController.swift in Sources */,
 				85115D5C279F9A1400A38EE0 /* Utilities.swift in Sources */,
 				8511165F279F72D600A2AC87 /* AppDelegate.swift in Sources */,

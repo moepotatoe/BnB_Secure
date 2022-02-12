@@ -14,11 +14,13 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var homeButton: UIButton!
     @IBOutlet weak var plusButton: UIButton!
     @IBOutlet weak var gearButton: UIButton!
+    @IBOutlet weak var notificationsButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         //refresh.hidesWhenStopped = true
+        setUpElements()
     }
 
     /*
@@ -39,6 +41,10 @@ class HomeViewController: UIViewController {
         }
     }
     //refresh.startAnimating()
+    
+    func setUpElements() {
+        Utilities.styleGreenButton(notificationsButton)
+    }
 
 
     
