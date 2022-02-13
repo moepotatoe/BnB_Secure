@@ -28,8 +28,8 @@ class SettingsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        setUpElements()
     }
     
     @IBAction func homeButtonTapped(_ sender: UIButton) {
@@ -37,6 +37,16 @@ class SettingsViewController: UIViewController {
         Timer.scheduledTimer(withTimeInterval: 2.0, repeats: false) { (t) in
             self.stopRefresh()
         }
+    }
+    
+    func setUpElements() {
+        Utilities.styleTextField(usernameTextField)
+        Utilities.styleTextField(firstNameTextField)
+        Utilities.styleTextField(lastNameTextField)
+        Utilities.styleTextField(phoneNumberTextField)
+        Utilities.styleTextField(emailTextField)
+        Utilities.styleTextField(passwordTextField)
+        Utilities.styleTextField(licenseTextField)
     }
     
     

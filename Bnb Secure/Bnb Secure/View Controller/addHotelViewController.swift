@@ -51,7 +51,16 @@ class addHotelViewController: UIViewController {
     }
     
     func setUpElements()  {
-        Utilities.styleGreenButton(addButton)
+        Utilities.styleWhiteButton(addButton)
+        Utilities.styleTextField(hotelName)
+        Utilities.styleTextField(address)
+        Utilities.styleTextField(city)
+        Utilities.styleTextField(country)
+        Utilities.styleTextField(state)
+        Utilities.styleTextField(zipcode)
+        Utilities.styleTextField(roomNum)
+        Utilities.styleTextField(numOfGuests)
+        Utilities.styleTextField(roomType)
     }
     
 }
