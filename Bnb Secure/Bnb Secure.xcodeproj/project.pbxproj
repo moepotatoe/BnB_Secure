@@ -18,6 +18,7 @@
 		85111677279F84AA00A2AC87 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85111676279F84AA00A2AC87 /* SignUpViewController.swift */; };
 		85115D5C279F9A1400A38EE0 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85115D5B279F9A1400A38EE0 /* Utilities.swift */; };
 		85749B5C27B86BCE001BCC57 /* notificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85749B5B27B86BCE001BCC57 /* notificationsViewController.swift */; };
+		85C58C8A27B8E62A0093231A /* travel.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 85C58C8927B8E62A0093231A /* travel.mp4 */; };
 		85F0D51E27AC6CC900065434 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F0D51D27AC6CC900065434 /* SettingsViewController.swift */; };
 		85F0D52027AC6CD100065434 /* addHotelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F0D51F27AC6CD100065434 /* addHotelViewController.swift */; };
 /* End PBXBuildFile section */
@@ -36,6 +37,7 @@
 		85111676279F84AA00A2AC87 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		85115D5B279F9A1400A38EE0 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		85749B5B27B86BCE001BCC57 /* notificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = notificationsViewController.swift; sourceTree = "<group>"; };
+		85C58C8927B8E62A0093231A /* travel.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = travel.mp4; sourceTree = "<group>"; };
 		85F0D51D27AC6CC900065434 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		85F0D51F27AC6CD100065434 /* addHotelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addHotelViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,6 +74,7 @@
 			children = (
 				8511165E279F72D600A2AC87 /* AppDelegate.swift */,
 				85111660279F72D600A2AC87 /* SceneDelegate.swift */,
+				85C58C8827B8E5E70093231A /* Media */,
 				85115D5D279F9A1B00A38EE0 /* Helper */,
 				85111678279F84B200A2AC87 /* View Controller */,
 				85111664279F72D600A2AC87 /* Main.storyboard */,
@@ -102,6 +105,14 @@
 				85115D5B279F9A1400A38EE0 /* Utilities.swift */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		85C58C8827B8E5E70093231A /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				85C58C8927B8E62A0093231A /* travel.mp4 */,
+			);
+			path = Media;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,6 +176,7 @@
 				8511166B279F72D700A2AC87 /* LaunchScreen.storyboard in Resources */,
 				85111668279F72D700A2AC87 /* Assets.xcassets in Resources */,
 				85111666279F72D600A2AC87 /* Main.storyboard in Resources */,
+				85C58C8A27B8E62A0093231A /* travel.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
