@@ -3,6 +3,7 @@
 #include <MFRC522.h>
 #include <LiquidCrystal.h>
 #include <SoftwareSerial.h>
+#include <StreamUtils.h>
 #include <ArduinoJson.h>
 
 //Hardware Pin
@@ -16,7 +17,7 @@ LiquidCrystal lcd(7, 8, 9, 10, 11, 12);
 MFRC522 rfidReader(SS_PIN, RST_PIN); // Instance of the class
 
 //Instantiate ESP8266 object Class
-SoftwareSerial wifiModule(0, 1); // RX Pin, TX Pin
+SoftwareSerial wifiModule(0, 23); // 2 to TX Pin, 3 to RX Pin to the esp8266
 
 bool isRead = false;
 bool isNewCard = false;
@@ -30,10 +31,13 @@ unsigned long startTime = 0;
 
 void setup() {
   // Initiating:
-  Serial.begin(115200);
-  wifiModule.begin(9600);
+  Serial.begin(9600);
+  //wifiModule.begin(4800);
+  Serial1.begin(4800);
   wifiModule.setTimeout(5000);
+  SPI.begin();
   rfidReader.PCD_Init(); 
+  
   lcd.begin(16, 2);
   //LCD start up sequence
   lcd.setCursor(3,0);
@@ -41,13 +45,17 @@ void setup() {
   lcd.setCursor(3,1);
   lcd.print("BnB Secure");
   delay(3000);
-
+  //Print Firmware Version
+  rfidReader.PCD_DumpVersionToSerial();
+  delay(1500);
   printWaitingModeMessage();
 }
 
 void loop() {
   // put your main code here, to run repeatedly:
+  // Look for new tag
   if (rfidReader.PICC_IsNewCardPresent()) {
+    // Select tag
     if(rfidReader.PICC_ReadCardSerial()) {
       isRead = true;
       byte letter;
@@ -58,6 +66,7 @@ void loop() {
         tagContent.concat(String(rfidReader.uid.uidByte[i] < 0x10 ? " 0" : " "));
         tagContent.concat(String(rfidReader.uid.uidByte[i], HEX));
       }
+      Serial.println();
       tagContent.toUpperCase();
     }
     if(isRead) {
@@ -72,33 +81,38 @@ void loop() {
         } else {
           isNewCard = false;
         } 
-       }
-       if(isNewCard) {
+      } 
+      if(isNewCard) {
         if(tagContent != "") {
           previousTime = startTime;
           //Send the RFID UID code to the ESP8266 for validation
           Serial.print("Sending data to module: ");
-          Serial.println(tagContent);
-          wifiModule.println(tagContent);
-          Serial.println("Waiting for response from wifi module....");
-        
+          //Serial.println(tagContent);
+          //wifiModule.println(tagContent);
+          Serial1.println(tagContent);
+          // Checking wifi module
+          Serial.println("Waiting for response from wifi module...");
+          
           int iCtr = 0;
-          while(!wifiModule.available()) {
+          
+          while(!Serial1.available()) {
             iCtr++;
             if(iCtr >= 100)
               break;
-            delay(50); 
+            delay(100); 
             }
-            if(wifiModule.available()) {
-              bool isAuthorized = isUserAuthorized(tagContent);
-
-              //if user is OR not authorized display the message
-              if(!isAuthorized) {
-                printNotAuthorized();
-              } else {
-                printAuthorized();
-              }
+            
+          if(Serial1.available()>0) {
+            Serial.println("Wifi module is available");
+            bool isAuthorized = isUserAuthorized(tagContent);
+            //if user is OR not authorized display the message
+            if(!isAuthorized) {
+              printNotAuthorized();
+              
+            } else {
+              printAuthorized();
             }
+          }
             Serial.println("Finished processing response from Wifi Module");
           }
         }
@@ -112,23 +126,25 @@ void loop() {
 
 bool isUserAuthorized(String tagContent) {
   //Process if message is ready
-  DynamicJsonDocument doc(1024);
-  DeserializationError error = deserializeJson(doc, wifiModule);
+  const size_t capacity = JSON_OBJECT_SIZE(1) + 30;
+  DynamicJsonDocument doc(capacity);
+  //ReadLoggingStream loggingStream(Serial1, Serial);
+  //DeserializationError error = deserializeJson(doc, loggingStream);
+  DeserializationError error = deserializeJson(doc, Serial1);
   if(error) {
     Serial.print("DeserializeJson() failed: ");
     Serial.println(error.c_str());
     return error.c_str();
   }
-  bool   is_authorized = doc["is_authorized"] == "true";
+  String auth = doc["is_authorized"];
+  Serial.println(auth);
+  bool is_authorized = doc["is_authorized"] == "true";
   Serial.print("is_authorized: ");
   Serial.println(is_authorized);
   return is_authorized;
 }
 
 void printWaitingModeMessage() {
-  //Print Firmware Version
-  rfidReader.PCD_DumpVersionToSerial();
-  delay(1500);
   Serial.println();
   Serial.println("-Access Control-");
   Serial.println("Scan tag to see UID");
