@@ -17,7 +17,7 @@ LiquidCrystal lcd(7, 8, 9, 10, 11, 12);
 MFRC522 rfidReader(SS_PIN, RST_PIN); // Instance of the class
 
 //Instantiate ESP8266 object Class
-SoftwareSerial wifiModule(0, 23); // 2 to TX Pin, 3 to RX Pin to the esp8266
+//SoftwareSerial wifiModule(0, 23); // 2 to TX Pin, 3 to RX Pin to the esp8266
 
 bool isRead = false;
 bool isNewCard = false;
