@@ -1,6 +1,7 @@
 #include <ESP8266WiFi.h>
 #include <ESP8266HTTPClient.h>
 #include <ArduinoJson.h>
+#include <SoftwareSerial.h>
 
 const char* ssid     = "402_Payment_Required";
 const char* password = "I_cho0se_you";
@@ -15,9 +16,13 @@ const char* host = "127.0.0.1:8080";
   #define DPRINTLN(...)   //now defines a blank line
 #endif
 
+#define RX_PIN 21
+#define TX_PIN 22
+SoftwareSerial rfidModule(RX_PIN, TX_PIN); // RX to TX Pin, TX to RX Pin to the MEGA
+
 void setup() {
   // put your setup code here, to run once:
-  Serial.begin(9600);
+  Serial.begin(4800);
   delay(10);
  
   // Start connecting to a WiFi network
@@ -49,7 +54,7 @@ void loop() {
   processRFIDTag();
 }
 
-void  receiveWithEndMarker() {
+void receiveWithEndMarker() {
   static byte index =0;
   char endMarker = '\n';
   char rc;
@@ -67,15 +72,15 @@ void  receiveWithEndMarker() {
         index = 0;
         newData = true;
      }
-  }   
+  }    
 }
 
 void processRFIDTag() {
-    if (newData == true) {
-        DPRINT("This just in ... ");
-        DPRINTLN(receivedChars);
-        newData = false;
-        isUserAuthorized(receivedChars);
+  if (newData == true) {
+    DPRINT("This just in ... ");
+    DPRINTLN(receivedChars);
+    newData = false;
+    isUserAuthorized(receivedChars);
     }
 }
 
@@ -85,12 +90,11 @@ void isUserAuthorized(String RFIDTag){
     WiFiClient client;
     HTTPClient http;
     // NOTE:  CHANGE THIS TO THE IP ADDRESS WHERE YOUR APPLICATION IS RUNNING
-    String url = "http://127.0.0.1:8080/student/isauthorized?rf_id_code=";
+    String url = "http://192.168.1.209:8080/user/isauthorized?rfid_tag=";
     String encodedRFIDTAG = urlEncode(RFIDTag);
     url += encodedRFIDTAG;
-    DPRINT("url :: ");
+    DPRINT("url: ");
     DPRINTLN(url);
-
     http.setTimeout(20000);
     if (http.begin(client, url)) {  // HTTP
 
