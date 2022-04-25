@@ -3,8 +3,8 @@
 #include <ArduinoJson.h>
 #include <SoftwareSerial.h>
 
-const char* ssid     = "402_Payment_Required";
-const char* password = "I_cho0se_you";
+const char* ssid     = "the ssid";
+const char* password = "the password";
 const char* host = "127.0.0.1:8080"; 
 
 //#define DEBUG   //If you comment this line, the DPRINT & DPRINTLN lines are defined as blank.
